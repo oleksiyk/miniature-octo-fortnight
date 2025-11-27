@@ -47,7 +47,7 @@
   <div id="error" class="error"></div>
 
   <div id="result" class="result" style="display:none;">
-    <p>5% від суми: <strong><span id="raw"></span></strong></p>
+    <p>3.5% від суми: <strong><span id="raw"></span></strong></p>
     <p>Округлено до 100: <strong><span id="rounded"></span></strong></p>
   </div>
 
@@ -76,7 +76,7 @@
         return;
       }
 
-      const percent5 = amount * 0.05;
+      const percent5 = amount * 0.035;
       const roundedTo100 = Math.round(percent5 / 100) * 100;
 
       rawEl.textContent = formatNumber(percent5);
@@ -87,3 +87,4 @@
   </script>
 </body>
 </html>
+
